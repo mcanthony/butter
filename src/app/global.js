@@ -11,6 +11,10 @@ var
     crypt = require('crypto'),
     semver = require('semver'),
 
+    data_path = 'hack',
+    gui = 'hack',
+
+    win = {},
     // Files
     fs = require('fs'),
     path = require('path'),
@@ -27,9 +31,6 @@ var
     iconv = require('iconv-lite'),
 
     // GUI
-    gui = require('nw.gui'),
-    win = gui.Window.get(),
-    data_path = gui.App.dataPath,
     i18n = require('i18n'),
 
     // Connectivity

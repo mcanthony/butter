@@ -51,6 +51,7 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('default', [
+        'concat',
         'css',
         'jshint',
         'bower_clean',
@@ -178,6 +179,16 @@ module.exports = function (grunt) {
                 options: {
                     mode: 'VERIFY_ONLY'
                 }
+            }
+        },
+
+        concat: {
+            js: {
+                src: [
+                    'src/vendor/js/**/*.js',
+                    'src/vendor/js/**'
+                ],
+                dest: 'build/js/vendor.js'
             }
         },
 
