@@ -5,6 +5,7 @@ var
     inherits = require('util').inherits,
     Q = require('q'),
 
+    App = {},
     // Machine readable
     os = require('os'),
     moment = require('moment'),
